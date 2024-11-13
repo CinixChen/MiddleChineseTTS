@@ -3,7 +3,7 @@ import * as ort from 'https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.
 
 async function loadModel() {
   // 載入模型
-  const session = await onnx.InferenceSession.create('https://huggingface.co/CinixChen/MiddleChineseTTS/blob/main/TTS3561_300K.onnx');
+  const session = await ort.InferenceSession.create('https://huggingface.co/CinixChen/MiddleChineseTTS/blob/main/TTS3561_300K.onnx');
   return session;
 }
 
